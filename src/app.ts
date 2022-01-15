@@ -19,7 +19,6 @@ app.event("message", async ({ event, say }: { event: any; say: any }) => {
   await say("ok");
 });
 
-
 app.event("app_mention", async ({ event, say }: { event: any; say: any }) => {
   console.log(event);
   await say("shut up");
