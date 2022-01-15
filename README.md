@@ -27,3 +27,7 @@ SLACK_BOT_TOKEN=xoxb-bbbb
 ```sh
 deno run --no-check=remote --allow-read --allow-env --allow-net src/app.ts
 ```
+
+## Run on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)

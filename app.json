@@ -1,0 +1,31 @@
+{
+    "name": "deno-slack-bot-playground",
+    "description": "Deno Slack bot sample.",
+    "repository": "https://github.com/Doarakko/deno-slack-bot-playgrounds",
+    "keywords": [
+        "bot",
+        "slack bot",
+        "deno"
+    ],
+    "env": {
+        "SLACK_APP_TOKEN": {
+            "description": "Enter your slack app token.",
+            "value": "xapp-aaaa"
+        },
+        "SLACK_BOT_TOKEN": {
+            "description": "Enter your slack bot token.",
+            "value": "xoxb-bbbb"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/chibat/heroku-buildpack-deno"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
